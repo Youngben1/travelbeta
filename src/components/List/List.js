@@ -11,19 +11,10 @@ import {
 import useStyles from "./styles";
 import { PlaceDetails } from "../PlaceDetails/PlaceDetails";
 
-export const List = () => {
+export const List = ({ places }) => {
   const classes = useStyles();
   const [type, setType] = useState("restaurants");
   const [rating, setRating] = useState("");
-
-  const places = [
-    { name: "Trenches Rice" },
-    { name: "Better Shaki" },
-    { name: "Best Suya" },
-    { name: "Trenches Rice" },
-    { name: "Better Shaki" },
-    { name: "Best Suya" },
-  ];
 
   return (
     <div>
